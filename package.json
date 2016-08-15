@@ -1,0 +1,16 @@
+{
+  "name": "angular_webpack_test",
+  "version": "0.0.0",
+  "description": "an angular webpack test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jon z",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.13.2",
+    "babel-preset-es2015": "^6.13.2",
+    "webpack": "^1.13.1"
+  }
+}
