@@ -1,5 +1,5 @@
 'use strict';
 
-require('angular');
+import angular from 'angular';
 
-var todoApp = angular.module('todoApp', []);
+angular.module('todoApp', []);
