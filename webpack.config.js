@@ -1,5 +1,10 @@
+'use strict';
+
 module.exports = {
-  entry: './app/src/todoApp.js',
+  entry: {
+    app: './app/src/todoApp.js',
+    vendor: ['angular']
+  },
   output: {
     path: './app/min',
     filename: 'app.bundle.js'
