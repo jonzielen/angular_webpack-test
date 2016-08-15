@@ -1,15 +1,13 @@
-'use strict';
-
 var webpack = require('webpack');
 
 module.exports = {
   entry: {
     app: './app/src/todoApp.js',
-    vendor: ['angular']
+    angular: ['angular']
   },
   output: {
     path: './app/min',
-    filename: 'app.bundle.js'
+    filename: '[name].bundle.js'
   },
   module: {
     loaders: [{

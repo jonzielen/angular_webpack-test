@@ -1,5 +1,1 @@
-'use strict';
-
-import angular from 'angular';
-
-angular.module('ngLocale', []);
+angular.module('todoApp', []);
