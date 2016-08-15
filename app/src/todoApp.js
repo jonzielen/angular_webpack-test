@@ -2,4 +2,4 @@
 
 import angular from 'angular';
 
-angular.module('todoApp', []);
+angular.module('ngLocale', []);
