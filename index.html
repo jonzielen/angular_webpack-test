@@ -12,19 +12,20 @@
     <button>add</button>
   </div>
 
-  <table>
-    <tr>
-      <td>{{todo.user}}</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>item</td>
-      <td>done</td>
-    </tr>
-    <tr ng-repeat="item in todo.items">
-      <td>{{item.item}}</td>
-      <td>{{item.done}}</td>
-    </tr>
+  <h6>{{todo.user}}</h6>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <td>item</td>
+        <td>done</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="item in todo.items">
+        <td>{{item.item}}</td>
+        <td>{{item.done}}</td>
+      </tr>
+    </tbody>
   </table>
 
 </body>
