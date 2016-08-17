@@ -1,6 +1,6 @@
 var model = {
   user: 'Jon',
-  data: [
+  items: [
     {
       item: 'one',
       done: false

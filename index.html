@@ -14,12 +14,16 @@
 
   <table>
     <tr>
+      <td>{{todo.user}}</td>
+      <td></td>
+    </tr>
+    <tr>
       <td>item</td>
       <td>done</td>
     </tr>
-    <tr>
-      <td></td>
-      <td></td>
+    <tr ng-repeat="item in todo.items">
+      <td>{{item.item}}</td>
+      <td>{{item.done}}</td>
     </tr>
   </table>
 
