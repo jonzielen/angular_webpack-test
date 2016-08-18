@@ -3,19 +3,19 @@ var model = {
   items: [
     {
       item: 'one',
-      done: false
+      status: false
     },
     {
       item: 'two',
-      done: false
+      status: false
     },
     {
       item: 'three',
-      done: true
+      status: true
     },
     {
       item: 'four',
-      done: false
+      status: false
     }
   ]
 };

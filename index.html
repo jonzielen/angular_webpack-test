@@ -17,13 +17,15 @@
     <thead>
       <tr>
         <td>item</td>
+        <td></td>
         <td>done</td>
       </tr>
     </thead>
     <tbody>
       <tr ng-repeat="item in todo.items">
         <td>{{item.item}}</td>
-        <td>{{item.done}}</td>
+        <td><input type="checkbox" ng-model="item.status"></td>
+        <td>{{item.status ? 'true' : 'false'}}</td>
       </tr>
     </tbody>
   </table>
