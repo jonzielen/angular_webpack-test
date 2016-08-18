@@ -24,4 +24,11 @@ var todoApp = angular.module('todoApp', []);
 
 todoApp.controller('ToDoCtrl', function ($scope) {
   $scope.todo = model;
+  $scope.incompleteCount = function() {
+    angular.forEach($scope.todo.items, function(e) {
+      console.log(e);
+    });
+  }
+
+  $scope.incompleteCount();
 });

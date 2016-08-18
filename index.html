@@ -17,7 +17,6 @@
     <thead>
       <tr>
         <td>item</td>
-        <td></td>
         <td>done</td>
       </tr>
     </thead>
@@ -25,7 +24,6 @@
       <tr ng-repeat="item in todo.items">
         <td>{{item.item}}</td>
         <td><input type="checkbox" ng-model="item.status"></td>
-        <td>{{item.status ? 'true' : 'false'}}</td>
       </tr>
     </tbody>
   </table>
