@@ -13,6 +13,7 @@
   </div>
 
   <h6>{{todo.user}}</h6>
+  <h6 ng-show="incompleteCount() > 0">complete: {{incompleteCount()}}</h6>
   <table class="table table-striped">
     <thead>
       <tr>
@@ -29,7 +30,7 @@
   </table>
 
   <hr>
-  
+
   <a href="https://www.airpair.com/angularjs/posts/top-10-mistakes-angularjs-developers-make">read</a>
 </body>
 </html>
