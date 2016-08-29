@@ -13,7 +13,8 @@
   </div>
 
   <h6>{{todo.user}}</h6>
-  <h6 ng-show="incompleteCount() > 0">complete: {{incompleteCount()}}</h6>
+  <h6 ng-class="warningLevel()">complete: {{completeCount()}}</h6>
+  <h6 ng-show="incompleteCount() > 0">incomplete: {{incompleteCount()}}</h6>
   <table class="table table-striped">
     <thead>
       <tr>
