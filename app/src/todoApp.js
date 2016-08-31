@@ -1,26 +1,14 @@
 var model = {
-  user: 'Jon',
-  items: [
-    {
-      item: 'one',
-      status: false
-    },
-    {
-      item: 'two',
-      status: false
-    },
-    {
-      item: 'three',
-      status: true
-    },
-    {
-      item: 'four',
-      status: false
-    }
-  ]
+  user: 'Jon'
 };
 
 var todoApp = angular.module('todoApp', []);
+
+todoApp.run(function($http) {
+  $http.get('../2016-08-11-angular/app/src/todo.json').success(function(data) {
+    model.items = data;
+  });
+});
 
 todoApp.filter('checkedItems', function() {
   return function(items, showComplete) {
